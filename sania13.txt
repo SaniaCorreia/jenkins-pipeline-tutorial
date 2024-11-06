@@ -2,3 +2,8 @@ HELLO ....
 My name is Sania Correia.
 I study at St. Francis institue of technology
 I am TE-IT-A1
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+scoop bucket add hookdeck https://github.com/hookdeck/scoop-hookdeck-cli.git
+Scoop install hookdeck
+hookdeck listen 8080
